@@ -1,0 +1,42 @@
+@startuml
+
+class Biblioteca{
+    object[] biblioteca
+    mostrar_biblioteca()
+    
+}
+
+abstract class Elementos{
+    nombre
+    año
+    disponible
+    entregar_info()
+}
+
+class Libros{
+    autor
+    
+}
+
+class Revista{
+    
+}
+
+class Periodico{
+    
+}
+
+class Multimedia{
+    tipo
+
+}
+
+
+
+Elementos <|-- Libros
+Elementos <|-- Revista
+Elementos <|-- Periodico
+Elementos <|-- Multimedia
+Biblioteca *-- Elementos
+
+@enduml
