@@ -15,20 +15,23 @@ abstract class Elementos{
 
 class Libros{
     autor
+    genero
     
 }
 
 class Revista{
-    
+    editorial
+    periodicidad
 }
 
 class Periodico{
-    
+    fecha
+    pais
 }
 
 class Multimedia{
-    tipo
-
+    duracion
+    formato
 }
 
 
